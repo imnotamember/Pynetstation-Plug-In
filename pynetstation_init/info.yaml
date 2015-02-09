@@ -1,0 +1,40 @@
+description: PyNetstation initializer.
+version: 0.1
+author: "Joshua Zosky"
+url: "https://github.com/imnotamember"
+category: "PyNetstation"
+date: "2015"
+priority: 100
+controls:
+-
+	type: "checkbox"
+	var: "nsOnOff"
+	label: "NetStation plug-in On/Off switch"
+	name: "OnOffcheckbox_widget"
+	tooltip: "Check box if you want Netstation plug-ins to work while running experiment"
+-
+    type: "text"
+    label: "Choose whether to use Threaded connection(recommended) or Simple connection(legacy) and enter the IP address & port of the computer NetStation is on."
+-
+    type: "combobox"
+    var: "threadoption"
+    label: "Select option"
+    options:
+    - "Threaded"
+    - "Simple"
+	- "Faker!"
+    name: "threaded_combobox_widget"
+    tooltip: "Select if you want to use Threaded connection with NetStation(faster/more reliable) or Simple connection(in case Threaded doesn't work)"
+-
+    type: "line_edit"
+    var: "iptext"
+    label: "Enter IP address"
+    name: "ip_line_edit_widget"
+    tooltip: "Enter IP of NetStation computer"
+-
+    type: "line_edit"
+    var: "porttext"
+    label: "Enter Port"
+    name: "port_line_edit_widget"
+    tooltip: "Enter Port of NetStation computer"
+

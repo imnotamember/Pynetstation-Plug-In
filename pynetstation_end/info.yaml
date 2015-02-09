@@ -1,0 +1,11 @@
+description: PyNetstation End Netstation Session.
+version: 0.1
+author: "Joshua Zosky"
+url: "https://github.com/imnotamember"
+category: "PyNetstation"
+date: "2015"
+priority: 10
+controls:
+-
+    type: "text"
+    label: "This item ends the current session in Netstation. There are no settings to set here."

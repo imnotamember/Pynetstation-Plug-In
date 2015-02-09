@@ -1,0 +1,11 @@
+description: PyNetstation Recording Pause.
+version: 0.1
+author: "Joshua Zosky"
+url: "https://github.com/imnotamember"
+category: "PyNetstation"
+date: "2015"
+priority: 60
+controls:
+-
+    type: "text"
+    label: "This item pauses recording in Netstation. There are no settings to set here."

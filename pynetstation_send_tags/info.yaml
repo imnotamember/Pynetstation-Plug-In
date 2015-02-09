@@ -1,0 +1,124 @@
+description: PyNetstation tag definitions.
+version: 0.1
+author: "Joshua Zosky"
+url: "https://github.com/imnotamember"
+category: "PyNetstation"
+date: "2015"
+priority: 70
+controls:
+-
+	type: "text"
+    label: "Make sure there is a 'Begin Trial' item prior to this item, preferably in the same loop as this item to ensure a proper time sync. Also, remember that the tags are sent in random order, so don't feel obligated to organize your tags."
+-
+    type: "line_edit"
+    var: "eventTag"
+    label: "Enter a 4-letter event ID:"
+    name: "event_line_edit_widget"
+    tooltip: "4-letter event code."
+-
+	type: "checkbox"
+	var: "labelCheck"
+	label: "Include a label for  this event?"
+	tooltip: "Check box to send an event label."
+-
+    type: "line_edit"
+    var: "labelText"
+    label: "Enter a general description:"
+    name: "label_line_edit_widget"
+    tooltip: "Generally describe these events being sent."
+-
+	type: "checkbox"
+	var: "descriptionCheck"
+	label: "Include a general description for all events being sent?"
+	tooltip: "Check box to send a general description."
+-
+    type: "line_edit"
+    var: "descriptionText"
+    label: "Enter a general description:"
+    name: "description_line_edit_widget"
+    tooltip: "Generally describe these events being sent."
+-
+	type: "checkbox"
+	var: "tag1check"
+	label: "Include Tag 1?"
+	tooltip: "Check box to send this event tag."
+-
+    type: "line_edit"
+    var: "tagText1"
+    label: "Enter variable for tag 1:"
+    name: "tag1_line_edit_widget"
+    tooltip: "Values can be numbers or letters, with little restriction."
+-
+    type: "line_edit"
+    var: "tagID1"
+    label: "Enter 4-letter tag ID:"
+    name: "tagid1_line_edit_widget"
+    tooltip: "Make sure this is descriptive and different from other tag ID's."
+-
+	type: "checkbox"
+	var: "tag2check"
+	label: "Include Tag 2?"
+	tooltip: "Check box to send this event tag."
+-
+    type: "line_edit"
+    var: "tagText2"
+    label: "Enter variable for tag 2:"
+    name: "tag2_line_edit_widget"
+    tooltip: "Values can be numbers or letters, with little restriction."
+-
+    type: "line_edit"
+    var: "tagID2"
+    label: "Enter 4-letter tag ID:"
+    name: "tagid2_line_edit_widget"
+    tooltip: "Make sure this is descriptive and different from other tag ID's."
+-
+	type: "checkbox"
+	var: "tag3check"
+	label: "Include Tag 3?"
+	tooltip: "Check box to send this event tag."
+-
+    type: "line_edit"
+    var: "tagText3"
+    label: "Enter variable for tag 3:"
+    name: "tag3_line_edit_widget"
+    tooltip: "Values can be numbers or letters, with little restriction."
+-
+    type: "line_edit"
+    var: "tagID3"
+    label: "Enter 4-letter tag ID:"
+    name: "tagid3_line_edit_widget"
+    tooltip: "Make sure this is descriptive and different from other tag ID's."
+-
+	type: "checkbox"
+	var: "tag4check"
+	label: "Include Tag 4?"
+	tooltip: "Check box to send this event tag."
+-
+    type: "line_edit"
+    var: "tagText4"
+    label: "Enter variable for tag 4:"
+    name: "tag4_line_edit_widget"
+    tooltip: "Values can be numbers or letters, with little restriction."
+-
+    type: "line_edit"
+    var: "tagID4"
+    label: "Enter 4-letter tag ID:"
+    name: "tagid4_line_edit_widget"
+    tooltip: "Make sure this is descriptive and different from other tag ID's."
+-
+	type: "checkbox"
+	var: "tag5check"
+	label: "Include Tag 5?"
+	tooltip: "Check box to send this event tag."
+-
+    type: "line_edit"
+    var: "tagText5"
+    label: "Enter variable for tag 5:"
+    name: "tag5_line_edit_widget"
+    tooltip: "Values can be numbers or letters, with little restriction."
+-
+    type: "line_edit"
+    var: "tagID5"
+    label: "Enter 4-letter tag ID:"
+    name: "tagid5_line_edit_widget"
+    tooltip: "Make sure this is descriptive and different from other tag ID's."

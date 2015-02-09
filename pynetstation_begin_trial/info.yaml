@@ -1,0 +1,32 @@
+description: PyNetstation Begin Trials.
+version: 0.1
+author: "Joshua Zosky"
+url: "https://github.com/imnotamember"
+category: "PyNetstation"
+date: "2015"
+priority: 80
+controls:
+-
+    type: "text"
+    label: "This item synchronizes clocks between Netstation's computer and Opensesame's computer. This should be in the same loop as the stimuli being presented."
+-
+    type: "line_edit"
+    var: "beginEvent"
+    label: "Enter a 4-letter event ID:"
+    name: "beginEvent_line_edit_widget"
+    tooltip: "4-letter event code."
+-
+    type: "line_edit"
+    var: "beginLabel"
+    label: "Enter a general description of these trials:"
+    name: "beginLabel_line_edit_widget"
+    tooltip: "Generally describe the events being sent."
+-
+    type: "line_edit"
+    var: "beginDescription"
+    label: "Enter a longer general description:"
+    name: "beginDescription_line_edit_widget"
+    tooltip: "Generally describe these events being sent."
+-
+    type: "text"
+    label: "These extra fields are for describing the current block of events. It will send an event to Netstation to indicate the beginning of trials."

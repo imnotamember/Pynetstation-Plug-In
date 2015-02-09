@@ -1,0 +1,11 @@
+description: PyNetstation Re-Initialization.
+version: 0.1
+author: "Joshua Zosky"
+url: "https://github.com/imnotamember"
+category: "PyNetstation"
+date: "2015"
+priority: 20
+controls:
+-
+    type: "text"
+    label: "This item re-initializes Netstation. It is necessary if you end an EEG recording session prior to ending the experiment. Make sure you have a new session started before loading this item, otherwise the experiment will crash."
