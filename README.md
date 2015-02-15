@@ -1,7 +1,7 @@
 # Pynetstation-Plug-In
 Plug-in for OpenSesame to use EGI's Netstation EEG software
 
-This plug-in includes 7 items:
+This plug-in includes 8 items:
 - pynetstation source files (in folder egi)
 ——These files are almost identical to the ones available at
 https://code.google.com/p/pynetstation/ except a correction in the
