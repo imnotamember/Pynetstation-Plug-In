@@ -53,11 +53,7 @@ class pynetstation_init(item):
 
 		# Call the parent constructor.
 		item.prepare(self)
-		
-		if hasattr(self.experiment, u'pynetstation_init'):
-			raise osexception( \
-				u'You should only have one instance of 'pynetstation_init' in your experiment')
-		
+ 	
 	def run(self):
 
 		"""The run phase of the plug-in goes here."""
@@ -83,7 +79,7 @@ class pynetstation_init(item):
 					import egi.threaded as egi
 				else:
 					import egi.fake as egi
-					print ':::Fake Session:::'
+					print 'Fake Session!!!!!!!!!!!!'
 				self.experiment.egi = egi
 				ms_localtime = self.experiment.egi.ms_localtime
 				self.experiment.ns = self.experiment.egi.Netstation()
