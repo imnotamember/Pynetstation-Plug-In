@@ -1,9 +1,9 @@
 description: PyNetstation tag definitions.
-version: 0.1
+version: 0.2
 author: "Joshua Zosky"
-url: "https://github.com/imnotamember"
+url: "http://imnotamember.github.io/"
 category: "PyNetstation"
-date: "2015"
+date: "2017"
 priority: 70
 controls:
 -

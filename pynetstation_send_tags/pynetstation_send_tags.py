@@ -134,7 +134,8 @@ class pynetstation_send_tags(item):
 			description = str(self.get(u'descriptionText'))
 			timestamp=self.experiment.egi.ms_localtime()
 			table = tagTable
-			self.experiment.ns.send_event(event, timestamp, label, description, table, pad = True)
+			self.experiment.window.callOnFlip(self.experiment.ns.send_event, event, timestamp, label, description, table, pad=True)
+			self.experiment.ns.send_event('evtT', timestamp, label, description, table, pad = True)
 		
 class qtpynetstation_send_tags(pynetstation_send_tags, qtautoplugin):
 	
