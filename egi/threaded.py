@@ -450,7 +450,70 @@ class Netstation :
     
     ## -----------------------------------------------------------
 
+    def send_timestamped_event(self, key, label=None, description=None, table=None, pad=False):
+        """
+            Send an event timestamped to the time it is sent;
+            note that before sending any events a sync() has to be called
+            to make the sent events effective .     
 
+            Arguments:
+            -- 'id' -- a four-character identifier of the event ;
+            -- 'timestamp' -- the local time when event has happened, in milliseconds ;
+                              note that the "clock" used to produce the timestamp should be the same
+                              as for the sync() method, and, ideally,
+                              should be obtained via a call to the same function ;
+                              if 'timestamp' is None, a time.time() wrapper is used .
+            -- 'label' -- a string with any additional information, up to 256 characters .     
+            -- 'description' -- more additional information can go here ( same limit applies ) .
+            -- 'table' -- a standart Python dictionary, where keys are 4-byte identifiers,
+                          not more than 256 in total ;
+                          there are no special conditions on the values,
+                          but the size of every value entry in bytes should not exceed 2 ^ 16 .     
+
+            Note A: due to peculiarity of the implementation, our particular version of NetStation
+                    was not able to record more than 2^15 events per session .
+
+            Note B: it is *strongly* recommended to send as less data as possible .
+
+        """
+
+        '''
+
+        #
+        # bugfix : as it seems that NetStation
+        #
+        #        (a) does not clean the internal buffer for the "event" data
+        #          and
+        #        (b) ignores the "total packet length" from the "event" message header
+        #            when reading the "label" / "description" / "key/data" information ,     
+        #
+        #        we have to append a fake "tail" to our message if the case if it is incomplete --
+        #        -- otherwise either garbage or the information from the previous datagram
+        #        would be erroneously recognized as belonging to ours .     
+        #
+
+        # 
+        # the following would make the _DataFormat.pack() method     
+        # to create (empty) description and label fields as well, if necessary     
+        #
+
+        if ( table is None ) or ( len( table.keys() ) <= 0 ) :     
+
+            zero_entry = { '\x00' * 4 : 0 }     
+
+        '''
+        timestamp = ms_localtime()
+        kwargs = {                             \
+                   'key'         : key         ,
+                   'timestamp'   : timestamp   ,
+                   'label'       : label       ,
+                   'description' : description ,
+                   'table'       : table       ,
+                   'pad'         : pad         \
+                }
+
+        packet = _Command( 'send_event', kwargs )
+        self._put( packet )
 
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
