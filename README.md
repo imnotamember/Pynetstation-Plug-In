@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/30547356.svg)](https://zenodo.org/badge/latestdoi/30547356)
+
 # Pynetstation-Plug-In
 Plug-in for OpenSesame to use EGI's Netstation EEG software
 
