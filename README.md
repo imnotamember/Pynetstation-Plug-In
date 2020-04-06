@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/30547356.svg)](https://zenodo.org/badge/latestdoi/30547356)
 
 # Pynetstation-Plug-In
